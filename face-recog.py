@@ -4,7 +4,7 @@ import face_recognition
 # loading image and convert it in RGB
 imgRaju=face_recognition.load_image_file('dataset/raju.jpeg')
 imgRaju= cv2.cvtColor(imgRaju , cv2.COLOR_BGR2RGB)
-imgTest=face_recognition.load_image_file('dataset/r.jpeg')
+imgTest=face_recognition.load_image_file('dataset/raju test.jpeg')
 imgTest= cv2.cvtColor(imgTest , cv2.COLOR_BGR2RGB)
 faceLoc=face_recognition.face_locations(imgRaju)[0]
 encodeRaju=face_recognition.face_encodings(imgRaju)[0]
